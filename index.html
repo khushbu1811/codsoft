@@ -43,7 +43,7 @@
             color: beige;
         }
 
-        a{
+        a {
             color: navy;
         }
 
@@ -177,6 +177,184 @@
             list-style-type: none;
         }
 
+        @media screen and (max-width: 600px) {
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: beige;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: beige;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                height: 3rem;
+                padding: 2rem;
+                background-color: navy;
+            }
+
+            nav ul {
+                font-size: 0.7rem;
+                display: flex;
+                justify-content: center;
+            }
+
+            .left {
+                font-style: bold;
+                font-size: 1rem;
+            }
+
+            li a {
+                list-style-type: none;
+                margin: 5px;
+                color: beige;
+            }
+
+            a {
+                color: navy;
+            }
+
+            .first {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 10px;
+                margin-top: 10px;
+                color: black;
+            }
+
+            .leftSec {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-style: bold;
+                font-size: 0.7rem;
+                padding-top: 45px;
+            }
+
+            .navy {
+                color: navy;
+                font-size: 0.8rem;
+            }
+
+            #element {
+                color: goldenrod;
+                font-size: 0.8rem;
+            }
+
+            html {
+                color: goldenrod;
+                scroll-behavior: smooth;
+            }
+
+            #about {
+                text-align: center;
+                padding-top: 5%;
+                color: navy;
+                font-size: large;
+                height: 350px;
+            }
+
+            #skills {
+                padding-top: 5%;
+                text-align: center;
+                color: navy;
+                font-size: large;
+                height: 500px;
+            }
+
+            #projects {
+                padding-top: 5%;
+                text-align: center;
+                color: navy;
+                font-size: large;
+                height: 300px;
+            }
+
+            #resume {
+                padding-top: 5%;
+                text-align: center;
+                color: navy;
+                font-size: large;
+                height: 300px;
+            }
+
+            #contactme {
+                padding-top: 5%;
+                text-align: center;
+                color: navy;
+                font-size: large;
+                height: 200px;
+            }
+
+            .rightSection {
+                padding-left: 10%;
+                padding-right: 10%;
+                color: goldenrod;
+            }
+
+            nav ul li a:hover {
+                color: goldenrod;
+                font-size: 7px;
+            }
+
+
+            .black {
+                text-align: left;
+                color: goldenrod;
+                font-size: 11px;
+            }
+
+            .single {
+                text-align: left;
+                color: navy;
+                font-size: 10px;
+            }
+
+            * {
+                box-sizing: border-box
+            }
+
+            .container {
+                width: 100%;
+                background-color: goldenrod;
+            }
+
+            .skills {
+                text-align: right;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: white;
+            }
+
+            .html {
+                width: 90%;
+                background-color: navy;
+            }
+
+            .css {
+                width: 70%;
+                background-color: navy;
+            }
+
+            .excel {
+                width: 60%;
+                background-color: navy;
+            }
+
+
+            ul.nobullets {
+                list-style-type: none;
+            }
+
+            .background,
+            jpg.jpg {
+                width: 15px;
+                height: 15px;
+            }
+        }
     </style>
 </head>
 
@@ -201,7 +379,7 @@
                     id="element"></span></div>
             <div class="rightSec">
 
-                <img src="background,jpg.jpg" width="300px" height="300px">
+                <img src="background,jpg.jpg" width="200px" height="200px">
             </div>
         </section>
     </main>
@@ -216,7 +394,8 @@
     <div class="rightSection" id="about">
         <h2>About</h2><br><br><span class="black">Name : </span><span class="single">Khushbu Vishal
             Patekar</span><br><br><span class="black">Date of Birth : </span><span class="single">18th November,
-            2004</span><br><br><span class="black">Email Id : </span><a href="mailto:khushbupatekar@gmail.com">khushbupatekar@gmail.com</a></span><br>
+            2004</span><br><br><span class="black">Email Id : </span><a
+            href="mailto:khushbupatekar@gmail.com">khushbupatekar@gmail.com</a></span><br>
     </div>
     <hr>
     <div class="rightSection" id="skills">
@@ -247,11 +426,20 @@
     </div>
     <hr>
     <div class="rightSection" id="resume">
-        <h2>Resume</h2><br><p>Download Resume!</p><br><a href="https://1drv.ms/b/s!AoAgQgVDbUEBiARRrppedC2AexYx?e=9DDlUO">Resume Pdf File</a></button><br>
+        <h2>Resume</h2><br>
+        <p>Download Resume!</p><br><a href="https://1drv.ms/b/s!AoAgQgVDbUEBiARRrppedC2AexYx?e=9DDlUO">Resume Pdf
+            File</a></button><br>
     </div>
     <hr>
     <div class="rightSection" id="contactme">
-        <h2>Contact Me</h2><br><br><a href="https://www.linkedin.com/in/khushbu-patekar-1a4807274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="linkedin.jpg" width="80px" height="80px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:khushbupatekar@gmail.com"><img src="mail.jpg" width="80px" height="80px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://instagram.com/khushbu___1811?igshid=NGVhN2U2NjQ0Yg=="><img src="insta.jpg" width="80px" height="80px"></a>
+        <h2>Contact Me</h2><br><br><a
+            href="https://www.linkedin.com/in/khushbu-patekar-1a4807274?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+                src="linkedin.jpg" width="40px"
+                height="40px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+            href="mailto:khushbupatekar@gmail.com"><img src="mail.jpg" width="40px"
+                height="40px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+            href="https://instagram.com/khushbu___1811?igshid=NGVhN2U2NjQ0Yg=="><img src="insta.jpg" width="40px"
+                height="40px"></a>
     </div>
 </body>
 
